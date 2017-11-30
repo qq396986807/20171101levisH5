@@ -1,0 +1,928 @@
+html, body {
+    position: relative;
+    height: 100%;
+}
+body {
+    background: white;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color:#000;
+    margin: 0;
+    padding: 0;
+}
+body{
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: rgba(200,200,200,0);
+}
+input[type="text"]{
+    border: none;
+    outline: medium;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+     /*Center slide text vertically*/
+    /*display: -webkit-box;*/
+    /*display: -ms-flexbox;*/
+    /*display: -webkit-flex;*/
+    /*display: flex;*/
+    /*-webkit-box-pack: center;*/
+    /*-ms-flex-pack: center;*/
+    /*-webkit-justify-content: center;*/
+    /*justify-content: center;*/
+    /*-webkit-box-align: center;*/
+    /*-ms-flex-align: center;*/
+    /*-webkit-align-items: center;*/
+    /*align-items: center;*/
+}
+.page1{
+    background: url('../img/page1/page1.jpg') no-repeat;
+    background-size: 100% 100%;
+}
+.page2{
+    background: url('../img/page2/page3.jpg') no-repeat;
+    background-size: 100% 100%;
+}
+.page4{
+    background: url('../img/page4/page4.jpg') no-repeat;
+    background-size: 100% 100%;
+}
+.introduce{
+    width: 100%;
+    height: 100%;
+    background: url('../img/page1/introduce.jpg') no-repeat;
+    background-size: 100% 100%;
+    display: none;
+}
+.introduce>img{
+    width: 30%;
+    height: auto;
+    position: absolute;
+    top: 93%;
+    left: 35%;
+}
+#log{
+    width: 70%;
+    height: auto;
+    position: absolute;
+    top: 39%;
+    left: 15%;
+}
+#reg{
+    width: 70%;
+    height: auto;
+    position: absolute;
+    top: 56%;
+    left: 15%;
+}
+#bg,#bg2{
+    width: 90%;
+    height: 52%;
+    position: absolute;
+    top: 29%;
+    left: 5%;
+    background-color: white;
+    border-radius: 3%;
+}
+.box1{
+    width: 100%;
+    height: 15%;
+    margin-top: 17%;
+}
+.box2{
+    width: 100%;
+    height: 15%;
+    margin-top: 8%;
+}
+.box3{
+    width: 100%;
+    height: 30%;
+    margin-top: 4%;
+}
+.or{
+    margin-left:17% ;
+    width: 66%;
+    height: auto;
+    float: left;
+}
+.box1-1{
+    margin-top: 3%;
+}
+.box2-2{
+    margin-top: 4%;
+}
+.box1>img,.box2>img{
+    width: 14%;
+    height: auto;
+    float: left;
+    margin-left: 5%;
+}
+.inputLog{
+    border-bottom: 2px solid #828080;
+    width: 65%;
+    height: 80%;
+    float: left;
+}
+#phone,#phone2,#tm{
+    width: 80%;
+    height: 74%;
+    margin-top: 1%;
+    color: #828080;
+    font-size: 0.8em;
+}
+.tm-icon{
+    width: 9%;
+    height: auto;
+    float: left;
+    margin-left: 8%;
+}
+.input-tm{
+    border-bottom: 2px solid #828080;
+    width: 65%;
+    height: 45%;
+    float: left;
+}
+.float-k{
+    width: 7%;
+    height: 20%;
+    float: left;
+}
+#pwd,#pwd2{
+    float: left;
+    width: 50%;
+    height: 74%;
+    margin-top: 1%;
+    color: #828080;
+    font-size: 0.8em;
+}
+.codeBtn1,.codeBtn2{
+    float: left;
+    width: 40%;
+    height: 80%;
+    margin-top: 1%;
+    border-left: 1px solid black;
+    font-size: 0.8em;
+    line-height: 37px;
+}
+#J_second{
+    font-size: 16px;
+    line-height: 37px;
+}
+#logReq,#regReq{
+    width: 50%;
+    height: auto;
+    margin-left: 25%;
+    float: left;
+}
+#regReq{
+    width: 50%;
+    height: auto;
+    margin-left: 5%;
+    margin-top: 15%;
+    float: left;
+}
+#creg{
+    float: left;
+    width: 50%;
+    height: auto;
+    margin-top: 3%;
+    margin-left: 25%;
+}
+#text{
+    width: 60%;
+    height: auto;
+    position: absolute;
+    top: 16%;
+    left: 20%;
+}
+#text2{
+    width: 60%;
+    height: auto;
+    position: absolute;
+    top: 22%;
+    left: 20%;
+    display: none;
+}
+#see1,#see2{
+    width: 27%;
+    height: 8%;
+    position: absolute;
+    top: 39%;
+    left: 37%;
+}
+.xiangqing{
+    width: 100%;
+    height: 100%;
+    background: url('../img/page1/xiangqing.png') no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 102;
+    display: none;
+}
+#off{
+    width: 8%;
+    position: absolute;
+    left: 46%;
+    top: 93%;
+    height: auto;
+    z-index: 99;
+}
+#fc{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    left: 0;
+    top: 0;
+    display: none;
+}
+.score{
+    width: 60%;
+    height: auto;
+    position: absolute;
+    left: 20%;
+    top: 18%;
+}
+.cd{
+    width: 80%;
+    height: auto;
+    position: absolute;
+    top: 52%;
+    left: 10%;
+}
+#share,#phb,#zztb,#hgxq{
+    width: 56%;
+    height: auto;
+    position: absolute;
+    left: 22%;
+    top: 70%;
+}
+.num{
+    color: white;
+    font-size: 3em;
+    font-weight: 900;
+    position: absolute;
+    top: 23%;
+}
+.record{
+    color: white;
+    font-size: 1.3em;
+    font-weight: 900;
+    position: absolute;
+    left: 27%;
+    top: 35%;
+}
+#shareMask{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    display: none;
+}
+.phb{
+    width: 100%;
+    height: 100%;
+    background: url('../img/page4/phb-1.png') no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 103;
+    display: none;
+}
+.ck-box{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 103;
+    display: none;
+}
+.ckjs{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.jxk{
+    width: 70%;
+    height: auto;
+    position: absolute;
+    left: 15%;
+    top: 22%;
+}
+.game{
+    width: 100%;
+    height: 100%;
+    background: url('../img/page3/bg.jpg') no-repeat;
+    background-size: 100% 100%;
+}
+.game1,.game2,.game3,.game4,.game5{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.game1{
+    background: url('../img/page3/game1.jpg') no-repeat;
+    background-size: 100% 100%;
+    display: block;
+}
+.game2{
+    background: url('../img/page3/game2.jpg') no-repeat;
+    background-size: 100% 100%;
+}
+.game3{
+    background: url('../img/page3/game3.jpg') no-repeat;
+    background-size: 100% 100%;
+}
+.game4{
+    background: url('../img/page3/game4.jpg') no-repeat;
+    background-size: 100% 100%;
+}
+.game5{
+    background: url('../img/page3/game5.jpg') no-repeat;
+    background-size: 100% 100%;
+}
+.game1>img,.game2>img,.game3>img,.game4>img,.game5>img,.space>img{
+    position: absolute;
+    height: auto;
+}
+.space{
+    width: 100%;
+    height: 100%;
+}
+.c1{
+    width: 43%;
+    left: 29%;
+    top: 12%;
+    -webkit-animation: c1 2s infinite;
+}
+@-webkit-keyframes c1 {
+    50%{top: 13%}
+}
+.c2{
+    width: 34%;
+    left: 45%;
+    top: 44%;
+    -webkit-animation: c2 2s infinite;
+}
+@-webkit-keyframes c2 {
+    50%{left: 46%}
+}
+.c3{
+    width: 31%;
+    left: 33%;
+    top: 59%;
+    -webkit-animation: c3 2s 1s infinite;
+}
+@-webkit-keyframes c3 {
+    50%{top: 60%}
+}
+.nc1{
+    width: 26%;
+    left: 49%;
+    top: 66%;
+}
+.nc2{
+    width: 19%;
+    left: 64%;
+    top: 46%;
+    transform: rotate(-7deg);
+}
+.sjx{
+    width: 6%;
+    left: 68%;
+    top: 18%;
+}
+.huahand{
+    width: 31%;
+    left: 3%;
+    top: 50%;
+}
+.c4{
+    width: 24%;
+    left: 18%;
+    top: 17%;
+    transform: rotate(-16deg);
+    -webkit-animation: c4 2s infinite;
+}
+@-webkit-keyframes c4{
+    50%{top: 18%}
+}
+.c5{
+    width: 41%;
+    left: 27%;
+    top: 15%;
+    -webkit-animation: c5 2s infinite;
+}
+@-webkit-keyframes c5{
+    50%{transform: rotate(16deg)}
+}
+.c6{
+    width: 27%;
+    left: 35%;
+    top: 48%;
+    -webkit-animation: c6 2s infinite;
+}
+@-webkit-keyframes c6{
+    50%{transform: rotate(-16deg)}
+}
+.c7{
+    width: 28%;
+    left: 51%;
+    top: 51%;
+    -webkit-animation: c7 2s 1s infinite;
+}
+@-webkit-keyframes c7{
+    50%{top: 52%}
+}
+.c8{
+    width: 28%;
+    left: 36%;
+    top: 14%;
+    transform: rotate(-41deg);
+    -webkit-animation: c8 2s 1s infinite;
+}
+@-webkit-keyframes c8{
+    50%{top: 15%}
+}
+.c9{
+    width: 30%;
+    left: 16%;
+    top: 25%;
+    transform: rotate(-16deg);
+    -webkit-animation: c9 2s infinite;
+}
+@-webkit-keyframes c9{
+    50%{top: 26%}
+}
+.c10{
+    width: 43%;
+    left: 27%;
+    top: 25%;
+    -webkit-animation: c10 2s infinite;
+}
+@-webkit-keyframes c10{
+    50%{transform: rotate(16deg);}
+}
+.c11{
+    width: 39%;
+    left: 49%;
+    top: 47%;
+    -webkit-animation: c11 2s 1.5s infinite;
+}
+@-webkit-keyframes c11{
+     50%{top: 48%;}
+ }
+.c12{
+    width: 42%;
+    left: 32%;
+    top: 44%;
+    transform: rotate(17deg);
+    -webkit-animation: c12 2s infinite;
+}
+@-webkit-keyframes c12{
+    50%{transform: rotate(-17deg);}
+}
+.c13{
+    width: 40%;
+    left: 19%;
+    top: 66%;
+    transform: rotate(-50deg);
+    -webkit-animation: c13 2s 0.5s infinite;
+}
+@-webkit-keyframes c13{
+     50%{top: 67%;}
+ }
+.c14{
+    width: 24%;
+    left: 13%;
+    top: 32%;
+    transform: rotate(-11deg);
+    -webkit-animation: c14 2s 0.5s infinite;
+}
+@-webkit-keyframes c14{
+    50%{left: 14%;}
+}
+.c15{
+    width: 30%;
+    left: 25%;
+    top: 24%;
+    -webkit-animation: c15 2s 1s infinite;
+}
+@-webkit-keyframes c15{
+    50%{top: 25%;}
+}
+.c16{
+    width: 27%;
+    left: 34%;
+    top: 18%;
+    transform: rotate(-28deg);
+    -webkit-animation: c16 2s 1.5s infinite;
+}
+@-webkit-keyframes c16{
+    50%{top: 19%;}
+}
+.c17{
+    width: 32%;
+    left: 40%;
+    top: 12%;
+    transform: rotate(25deg);
+    -webkit-animation: c17 3s infinite;
+}
+@-webkit-keyframes c17{
+    50%{transform: rotate(0deg);}
+}
+.c18{
+    width: 32%;
+    left: 30%;
+    top: 32%;
+    transform: rotate(-50deg);
+    -webkit-animation: c18 3s infinite;
+}
+@-webkit-keyframes c18{
+    50%{top: 33%;}
+}
+.c19{
+    width: 33%;
+    left: 53%;
+    top: 36%;
+    transform: rotate(5deg);
+    -webkit-animation: c19 2s 1s infinite;
+}
+@-webkit-keyframes c19{
+    50%{top: 35%;}
+}
+.c20{
+    width: 24%;
+    left: 25%;
+    top: 42%;
+    transform: rotate(-20deg);
+    -webkit-animation: c20 3s 1s  infinite;
+}
+@-webkit-keyframes c20{
+    50%{transform: rotate(0deg);}
+}
+.c21{
+    width: 36%;
+    left: 34%;
+    top: 46%;
+    transform: rotate(19deg);
+    -webkit-animation: c21 4s infinite;
+}
+@-webkit-keyframes c21{
+    50%{transform: rotate(-19deg)}
+}
+.c22{
+    width: 34%;
+    left: 51%;
+    top: 46%;
+    -webkit-animation: c22 2s 0.5s infinite;
+}
+@-webkit-keyframes c22{
+    50%{top: 47%;}
+}
+.c23{
+    width: 31%;
+    left: 29%;
+    top: 68%;
+    transform: rotate(-60deg);
+    -webkit-animation: c23 2s 1s infinite;
+}
+@-webkit-keyframes c23{
+    50%{top: 67%;}
+}
+.c24{
+    width: 26%;
+    left: 19%;
+    top: 30%;
+    transform: rotate(-15deg);
+    -webkit-animation: c24 2s 1s infinite;
+}
+@-webkit-keyframes c24{
+    50%{top: 31%;}
+}
+.c25{
+    width: 18%;
+    left: 31%;
+    top: 21%;
+    transform: rotate(-9deg);
+    -webkit-animation: c25 3s infinite;
+}
+@-webkit-keyframes c25{
+    50%{transform: rotate(9deg);}
+}
+.c26{
+    width: 20%;
+    left: 56%;
+    top: 18%;
+    transform: rotate(-6deg);
+    -webkit-animation: c26 2s infinite;
+}
+@-webkit-keyframes c26{
+    50%{left: 57%;}
+}
+.c27{
+    width: 32%;
+    left: 30%;
+    top: 12%;
+    transform: rotate(-3deg);
+     -webkit-animation: c27 2s infinite;
+}
+@-webkit-keyframes c27{
+    50%{top: 13%;}
+}
+.c28{
+    width: 22%;
+    left: 32%;
+    top: 40%;
+    transform: rotate(17deg);
+    -webkit-animation: c28 2s 1.5s infinite;
+}
+@-webkit-keyframes c28{
+    50%{top: 41%;}
+}
+.c29{
+    width: 25%;
+    left: 55%;
+    top: 35%;
+    transform: rotate(-40deg);
+    -webkit-animation: c29 2s 1s infinite;
+}
+@-webkit-keyframes c29{
+    50%{top: 34%;}
+}
+.c30{
+    width: 24%;
+    left: 44%;
+    top: 24%;
+    transform: rotate(-16deg);
+    -webkit-animation: c30 2s 1s infinite;
+}
+@-webkit-keyframes c30{
+    50%{transform: rotate(0deg);}
+}
+.c31{
+    width: 24%;
+    left: 60%;
+    top: 55%;
+    transform: rotate(32deg);
+    -webkit-animation: c31 4s infinite;
+}
+@-webkit-keyframes c31{
+    50%{transform: rotate(0deg);}
+}
+.c32{
+    width: 26%;
+    left: 47%;
+    top: 51%;
+    transform: rotate(10deg);
+    -webkit-animation: c32 2s 0.5s infinite;
+}
+@-webkit-keyframes c32{
+    50%{transform: rotate(0deg);}
+}
+.c33{
+    width: 33%;
+    left: 25%;
+    top: 64%;
+    transform: rotate(-6deg);
+    -webkit-animation: c33 2s 1.5s infinite;
+}
+@-webkit-keyframes c33{
+    50%{top: 65%;}
+}
+.ddd,.jiayou{
+    width: 55%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    left: 2%;
+    z-index: 999;
+    display: none;
+}
+.ku,.zan,.cj{
+    width: 60%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    right: 2%;
+    z-index: 999;
+    display: none;
+}
+.sbd{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 977;
+}
+.hand{
+    width: 10%;
+    height: auto;
+    position: absolute;
+    top: 58%;
+    left: 59%;
+    z-index: 980;
+    -webkit-animation: hand 2s infinite;
+}
+@-webkit-keyframes hand{
+    50%{opacity: 0;}
+}
+.add-score{
+    position: absolute;
+    z-index: 1000;
+    font-weight: 900;
+    color: white;
+    font-size: 1.5em;
+    display: none;
+}
+.bottom{
+    width: 60%;
+    height: auto;
+    position: absolute;
+    left: 20%;
+    bottom: 4%;
+}
+.yuan{
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    position: absolute;
+    border-radius: 50%;
+    left: 7%;
+    top: 3%;
+    z-index: 100;
+}
+.yuan span{
+    color: #001d61;
+    display: inline-block;
+    line-height: 70px;
+}
+#num{
+    font-size: 2em;
+    font-weight: 900;
+}
+#jiangpin{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.p1{
+    background: url('../img/page1/p1.png') no-repeat;
+    background-size: 100% 100%;
+}
+.p2{
+    background: url('../img/page1/p2.png') no-repeat;
+    background-size: 100% 100%;
+}
+.p3{
+    background: url('../img/page1/p3.png') no-repeat;
+    background-size: 100% 100%;
+}
+.p4{
+    background: url('../img/page1/p4.png') no-repeat;
+    background-size: 100% 100%;
+}
+#off_jp{
+    width: 8%;
+    position: absolute;
+    left: 46%;
+    top: 89%;
+    height: auto;
+    z-index: 99;
+}
+#left,#right{
+    width: 4%;
+    height: auto;
+    position: absolute;
+    top: 30%;
+    z-index: 99;
+}
+#left{
+    left: 6%;
+}
+#right{
+    left: 91%;
+}
+.phb_box{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: 999;
+    top: 29%;
+    display: none;
+}
+.phb_box>div{
+    color: white;
+    width: 100%;
+    margin-top: 2%;
+}
+.sp1,.sp2,.sp3{
+    display: inline-block;
+    text-align: left;
+}
+.sp1{
+    width: 42%;
+    margin-left: 0;
+}
+.sp2{
+    width: 13%;
+}
+.sp3{
+    width: 3%;
+}
+.share_over{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.rotate {
+    -webkit-animation:rotating 2s linear infinite;
+    -moz-animation:rotating 2s linear infinite;
+    -o-animation:rotating 2s linear infinite;
+    animation:rotating 2s linear infinite
+}
+@-webkit-keyframes rotating {
+    from {
+        -webkit-transform:rotate(0)
+    }
+    to {
+        -webkit-transform:rotate(360deg)
+    }
+}
+@keyframes rotating {
+    from {
+        transform:rotate(0)
+    }
+    to {
+        transform:rotate(360deg)
+    }
+}
+@-moz-keyframes rotating {
+    from {
+        -moz-transform:rotate(0)
+    }
+    to {
+        -moz-transform:rotate(360deg)
+    }
+}
+#audio_btn {
+    top: 1%;
+    right: 2%;
+    position: fixed;
+    z-index: 100;
+    width: 35px;
+    height: 35px;
+    background-image: url(../img/page1/music.png);
+    background-size: contain;
+}
+.jzhp{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #32373b;
+    z-index: 11111;
+    display: none;
+}
+.xuanzhuan{
+    width: 10%;
+    height: auto;
+    position: fixed;
+    z-index: 22222;
+    left: 45%;
+    top: 34%;
+    -webkit-animation:xz 2s linear infinite
+}
+@-webkit-keyframes xz{
+    50%{transform: rotate(90deg);}
+}
+.tishi{
+    font-size: 1.5em;
+    color: #ffd40a;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    top: 80%;
+}

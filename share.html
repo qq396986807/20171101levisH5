@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Levi's · 礼遇最牛之人</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <!-- Link Swiper's CSS -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script>
+
+        function getQueryString(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+            var r = window.location.search.substr(1).match(reg);
+            if ( r != null ){
+                return decodeURI(r[2]);
+            }else{
+                return null;
+            }
+        }
+
+
+        var url = "http://www.createcdigital.com/createc-new/levis/index.php?source="+getQueryString("source")+"";
+        if(getQueryString("channel")){
+            url = url + "&channel=" + getQueryString("channel");
+        }
+        if(getQueryString("user")){
+//            var user = "";
+            url = url+"&user="+getQueryString("user")+"&flag=2"
+        }
+        if(getQueryString("phone")){
+            url = url+"&phone="+getQueryString("phone")+"&flag=1"
+        }
+        $.ajax({
+            url:'auto.php',
+            type:'POST',
+            data:{url:url},
+            success:function(data){
+                window.location.href=data;
+            }
+        })
+    </script>
+</head>
+<body>
+
+</body>
+</html>
